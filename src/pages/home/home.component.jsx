@@ -2,6 +2,8 @@ import React from "react";
 
 import Hero from "../../components/hero/hero.component";
 import Banner from "../../components/banner/banner.component";
+import Services from "../../components/services/services.component";
+import FeaturedRooms from "../../components/featured-rooms/featured-rooms.component";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
           text="Our rooms"
         />
       </Hero>
+      <Services />
+      <FeaturedRooms />
     </>
   );
 };

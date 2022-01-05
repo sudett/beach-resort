@@ -1,0 +1,79 @@
+.room {
+  // height: 20rem;
+  box-shadow: var(--lightShadow);
+  background-color: var(--darkGrey);
+  transition: var(--mainTransition);
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: var(--darkShadow);
+
+    .img-container {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .room-image {
+      opacity: 0.3;
+    }
+
+    .price-container {
+      opacity: 0;
+    }
+
+    .btn-room {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.img-container {
+  position: relative;
+  height: 85%;
+  transition: var(--mainTransition);
+}
+
+.room-image {
+  height: 100%;
+  width: 100%;
+  transition: var(--mainTransition);
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  line-height: 1.2;
+  padding: 0.5rem 1rem;
+  border-bottom-right-radius: 2rem;
+  opacity: 1;
+  transition: var(--mainTransition);
+}
+
+.price-number {
+  letter-spacing: var(--mainSpacing);
+}
+
+.price-per-night {
+  font-size: 1rem;
+}
+
+.btn-room {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: var(--mainTransition);
+}
+
+.room-name {
+  height: 15%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
