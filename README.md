@@ -1,3 +1,7 @@
+https://beach-resort-final.netlify.app/rooms
+
+In this project I practiced working with react-router-dom and also making reusable components with different props such as hero, banner and button components. It also helped me sharpen my skills in cotext API and hooks and also in working with forms with diffecrent inputs like select and checkbox. the most challenging part of this project was search rooms functionality.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
