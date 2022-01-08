@@ -5,7 +5,6 @@ import { useGlobalContext } from "../../context";
 import Room from "../room/room.component";
 import Title from "../title/title.component";
 
-// import "./featured-rooms.styles.scss";
 import { Section } from "../../global";
 import { SectionFeaturedContainer } from "./featured-rooms.styles";
 

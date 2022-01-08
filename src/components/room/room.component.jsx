@@ -1,16 +1,7 @@
 import React from "react";
 import Button from "../button/button.component";
 
-// import "./room.styles.scss";
-import {
-  RoomContainer,
-  ImageContainer,
-  RoomImage,
-  PriceContainer,
-  PriceNumber,
-  PricePerNight,
-  RoomName,
-} from "./room.styles";
+import { RoomContainer, ImageContainer, RoomImage, PriceContainer, PriceNumber, PricePerNight, RoomName } from "./room.styles";
 
 const Room = ({ id, images, price, name }) => {
   return (
@@ -21,12 +12,7 @@ const Room = ({ id, images, price, name }) => {
           <PriceNumber>${price}</PriceNumber>
           <PricePerNight>per night</PricePerNight>
         </PriceContainer>
-        <Button
-          btnRoom
-          classes="btn-room"
-          url={`/rooms/${id}`}
-          text="Features"
-        />
+        <Button btnRoom classes="btn-room" url={`/rooms/${id}`} text="Features" />
       </ImageContainer>
       <RoomName>{name}</RoomName>
     </RoomContainer>

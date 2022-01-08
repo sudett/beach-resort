@@ -16,5 +16,5 @@ export const HeroContainer = styled.header`
 
 export const RoomsHeroContainer = styled(HeroContainer)`
   height: 70vh;
-  background-image: ${({ backImage }) => `url(${backImage})` || `url(${roomsHeroImage})`};
+  background-image: ${({ backImage }) => (backImage ? `url(${backImage})` : `url(${roomsHeroImage})`)};
 `;
