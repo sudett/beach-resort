@@ -3,15 +3,7 @@ import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../images/logo.svg";
 
-import {
-  NavbarContainer,
-  Container,
-  ListContainer,
-  NavList,
-  NavLink,
-  ButtonToggle,
-  MenuIcon,
-} from "./navbar.styles";
+import { NavbarContainer, Container, ListContainer, NavList, NavLink, ButtonToggle, MenuIcon } from "./navbar.styles";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
