@@ -1,8 +1,10 @@
 import React from "react";
 
-import { HeroContainer } from "./hero.styles";
+import { HeroContainer, RoomsHeroContainer } from "./hero.styles";
 
-const Hero = ({ children }) => {
+const Hero = ({ children, roomsHero, backImage }) => {
+  if (roomsHero) return <RoomsHeroContainer backImage={backImage}>{children}</RoomsHeroContainer>;
+
   return <HeroContainer>{children}</HeroContainer>;
 };
 
